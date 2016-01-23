@@ -37,3 +37,7 @@ This plugin was created entirely by [Jason Chafin](http://www.jasonchafin.com), 
 ## License
 
 [Creative Commons 1.0 Universal](LICENSE)
+
+## Changelog
+
+0.0.0 First development
