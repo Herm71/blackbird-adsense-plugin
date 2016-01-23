@@ -7,7 +7,7 @@
  */
 
 // the widget to display the ads on the sidebar
-class Wptuts_AdSense_Widget extends WP_Widget {
+class Blackbird_AdSense_Widget extends WP_Widget {
     public function __construct() {
         parent::__construct(
             'blackbird_adsense_widget', // base ID of the widget
@@ -42,9 +42,9 @@ class Wptuts_AdSense_Widget extends WP_Widget {
  
 }
  
-function myplugin_register_widgets() {
-    register_widget( 'Wptuts_AdSense_Widget' );
+function blackbird_register_widgets() {
+    register_widget( 'Blackbird_AdSense_Widget' );
 }
  
-add_action( 'widgets_init', 'myplugin_register_widgets' );
+add_action( 'widgets_init', 'blackbird_register_widgets' );
 

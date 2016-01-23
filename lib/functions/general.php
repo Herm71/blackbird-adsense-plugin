@@ -64,12 +64,22 @@ function blackbird_return_adsense( $ad_type = '468x60' ) {
 // the function to insert the ads automatically after the "n"th paragraph in a post
 // the following code is borrowed from Internoetics, then edited:
 // http://www.internoetics.com/2010/02/08/adsense-code-within-content/
-function blackbird_auto_insert_adsense( $post_content ) {
+function blackbird_auto_insert_adsense_second( $post_content ) {
     if ( !is_single() ) return $post_content;
-    $afterParagraph = 1; // display after the "n"th paragraph
+    $afterParagraph = 2; // display after the "n"th paragraph
     $adsense = blackbird_return_adsense( '468x60' );
     preg_match_all( '/<\/p>/', $post_content, $matches, PREG_OFFSET_CAPTURE );
     $insert_at = $matches[0][$afterParagraph - 1][1];
     return substr( $post_content, 0, $insert_at) . $adsense . substr( $post_content, $insert_at, strlen( $post_content ) );
 }
-add_filter( 'the_content', 'blackbird_auto_insert_adsense' );
+add_filter( 'the_content', 'blackbird_auto_insert_adsense_second' );
+
+function blackbird_auto_insert_adsense_fourth( $post_content ) {
+    if ( !is_single() ) return $post_content;
+    $afterParagraph = 4; // display after the "n"th paragraph
+    $adsense = blackbird_return_adsense( '468x60' );
+    preg_match_all( '/<\/p>/', $post_content, $matches, PREG_OFFSET_CAPTURE );
+    $insert_at = $matches[0][$afterParagraph - 1][1];
+    return substr( $post_content, 0, $insert_at) . $adsense . substr( $post_content, $insert_at, strlen( $post_content ) );
+}
+add_filter( 'the_content', 'blackbird_auto_insert_adsense_fourth' );
