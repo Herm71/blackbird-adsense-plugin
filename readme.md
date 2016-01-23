@@ -1,31 +1,39 @@
 ## Synopsis
 
-At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
+This plugin adds your [Google AdSense](https://www.google.com/adsense/) ads to your [WordPress](http://www.wordpress.org) website. This plugin was developed with the help of the [EnvatoTuts+](http://tutsplus.com/) tutorial, [Making the Best of Google AdSense in WordPress](http://code.tutsplus.com/tutorials/making-the-best-of-google-adsense-in-wordpress--wp-29938)
 
-## Code Example
+As the tutorial explains, this plugin modifies the WordPress User Profile. It adds additional fields to the User Profile in which you can paste your Google AdSense Unit code for both the **300x250** ad size and the **468x60** ad size.
 
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+Once the code is pasted into a User Profile, the plugin will automatically add 468x60 ads after the **second** and **fourth** paragraphs in a blog post.
+
+The plugin also creates a Widget, which you can add to a side-bar, that you can use to include side-bar ads into your site. The best size to use for the widget is a 300x250 ad. 
+
+Please remember, Google AdSense only allows **three** AdSense ads per page. Therefore, with the automatic inclusion of the ads in the blogpost, the Widget should only be used once.
 
 ## Motivation
 
 A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
+Motivation for developing this plugin is two-fold. **First**, it was an excuse to hone my WordPress development skills by developing a plugin that includes a widget. **Second**, I maintain multiple WordPress websites; therefore, I wanted an easy way to include Google AdSense ads into all of them. A plugin seemed to fit the bill.
 
 ## Installation
 
-Provide code examples and explanations of how to get the project.
-
-## API Reference
-
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
-
-## Tests
-
-Describe and show how to run the tests with code examples.
+1. Download the Blackbird AdSense plugin zip file (blackbird-adsense-plugin.zip).
+2. In your WordPress Dashboard, navigate to **Plugins**.
+3. Click the **Add New** button at the top of the page.
+4. Click the **Upload Plugin** button at the top of the screen.
+5. Click **Choose File**
+5. Navigate to the **blackbird-adsense-plugin.zip** file you downloaded from [GitHub](https://www.github.com) and click **open**, then click **Install Now**.
+6. Once the plugin is installed, click **Activate Plugin**.
+7. After the plugin is installed, navigate to **Users** in the dashboard and find your WordPress user profile. You will find a new profile section titled, "Your Google Adsense Ads." You will find two new fields, one for the **300x250** ad size and one for the **468x60** ad size.
+8. Paste the proper Google AdSense code in the appropriate field.
+9. Profit.
 
 ## Contributors
 
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
+This plugin was created entirely by [Jason Chafin](http://www.jasonchafin.com), founder and president of [Blackbird Consulting](http://www.blackbirdconsult.com). 
+
+**Twitter:**  @BlackbirdConsul
 
 ## License
 
-A short snippet describing the license (MIT, Apache, etc.)
+[Creative Commons 1.0 Universal](LICENSE)
