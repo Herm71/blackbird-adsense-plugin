@@ -7,6 +7,9 @@
  * Author: Blackbird Consulting
  * Author URI: http://www.blackbirdconsult.com/
  * License: GPL2
+ * Text Domain: blackbird-adsense
+ * GitHub Plugin URI: https://github.com/Herm71/blackbird-adsense
+ * GitHub Branch: master
  * 
  * This program is free software; you can redistribute it and/or modify it under the terms of the GNU 
  * General Public License version 2, as published by the Free Software Foundation.  You may NOT assume 
