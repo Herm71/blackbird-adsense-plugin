@@ -46,7 +46,7 @@ function blackbird_return_adsense( $ad_type = '468x60' ) {
         '300x250' => '<img src="http://dummyimage.com/300x250" />',
         '468x60'  => '<img src="http://dummyimage.com/480x60" />'
     );
-    if ( is_single() ) {
+    if ( is_single() || is_archive() ) {
         global $post;
         $user_id = $post->post_author;
         $ad_code = get_user_meta( $user_id, 'adsense_' . $ad_type, true );
