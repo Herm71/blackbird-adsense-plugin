@@ -12,7 +12,6 @@ Please remember, Google AdSense only allows **three** AdSense ads per page. Ther
 
 # Motivation
 
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
 Motivation for developing this plugin is two-fold. **First**, it was an excuse to hone my WordPress development skills by developing a plugin that includes a widget. **Second**, I maintain multiple WordPress websites; therefore, I wanted an easy way to include Google AdSense ads into all of them. A plugin seemed to fit the bill.
 
 # Installation
@@ -41,6 +40,10 @@ This plugin was created entirely by [Jason Chafin](http://www.jasonchafin.com), 
 # Change Log
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
+
+## 0.3.1 - 2016-01-24
+### Changed
+- Edits to Readme
 
 ## 0.3.0 - 2016-01-24
 ### Changed
