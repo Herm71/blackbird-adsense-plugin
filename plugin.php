@@ -3,7 +3,7 @@
  * Plugin Name: Blackbird AdSense
  * Plugin URI: https://github.com/Herm71/blackbird-adsense
  * Description: Add your Google AdSense account to your WordPress Theme. Theme independent.
- * Version: 1.1.1
+ * Version: 0.3.0
  * Author: Blackbird Consulting
  * Author URI: http://www.blackbirdconsult.com/
  * License: GPL2
