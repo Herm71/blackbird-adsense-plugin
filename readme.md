@@ -41,6 +41,13 @@ This plugin was created entirely by [Jason Chafin](http://www.jasonchafin.com), 
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 0.3.2 - 2016-01-24
+### Changed
+- Edits to Readme
+
+### Added
+- Instructions in User Profile field that describe how Responsive Ads can also be added.
+
 ## 0.3.1 - 2016-01-24
 ### Changed
 - Edits to Readme

@@ -16,12 +16,12 @@ function blackbird_profile_adsense_show( $user ) {
         <tr>
             <th><label for="adsense_300x250">AdSense Ad Code (300x250)</label></th>
             <td><textarea name="adsense_300x250" id="adsense_300x250" rows="5" cols="30">' . get_user_meta( $user->ID, 'adsense_300x250', true) . '</textarea><br>
-            <span class="adsense_300x250">Your Google AdSense JavaScript code for the 300x250 ad space.<br /> Shortcode: [display_adsense ad_type="300"]</span></td>
+            <span class="adsense_300x250">Your Google AdSense JavaScript code for the 300x250 ad space.<br /> The code for a Responsive ad space can also be added.<br /> Shortcode: [display_adsense ad_type="300x250"]</span></td>
         </tr>
         <tr>
             <th><label for="adsense_468x60">AdSense Ad Code (468x60)</label></th>
             <td><textarea name="adsense_468x60" id="adsense_468x60" rows="5" cols="30">' . get_user_meta( $user->ID, 'adsense_468x60', true) . '</textarea><br>
-            <span class="adsense_468x60">Your Google AdSense JavaScript code for the 468x60 ad space.<br /> Shortcode: [display_adsense ad_type="468"]</span></td>
+            <span class="adsense_468x60">Your Google AdSense JavaScript code for the 468x60 ad space.<br /> The code for a Responsive ad space can also be added.<br />Shortcode: [display_adsense ad_type="468x60"]</span></td>
         </tr>
     </table>';
 }
@@ -83,3 +83,4 @@ function blackbird_auto_insert_adsense_fourth( $post_content ) {
     return substr( $post_content, 0, $insert_at) . $adsense . substr( $post_content, $insert_at, strlen( $post_content ) );
 }
 add_filter( 'the_content', 'blackbird_auto_insert_adsense_fourth' );
+
